@@ -178,7 +178,6 @@ def get_pokemon(instance):
 
     return pokemon
 
-
 def get_items(instance):
     data = get_data_from("items.csv")
 
@@ -199,7 +198,6 @@ def get_items(instance):
         )
 
     return items
-
 
 def get_effects(instance):
     data = get_data_from("move_effects.csv")

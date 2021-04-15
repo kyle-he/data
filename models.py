@@ -757,3 +757,12 @@ class DataManagerBase:
     @cached_property
     def spawn_weights(self):
         return [p.abundance for p in self.pokemon.values()]
+
+@dataclass
+class Duel:
+    id: int
+    names: typing.List[typing.Tuple[str, str]]
+    duel: Stats
+    
+    def __str__(self):
+        return self.name
